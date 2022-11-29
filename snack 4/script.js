@@ -33,7 +33,7 @@ while (minArray.length < maxArray.length){
 }
 
 for (i=0; i<maxArray.length; i++){
-    compressedArray.push(maxArray[i] + minArray[i]);
+    compressedArray.push(maxArray[i], minArray[i]);
 }
 
 console.log(compressedArray);
