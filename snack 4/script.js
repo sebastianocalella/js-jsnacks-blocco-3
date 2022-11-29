@@ -24,9 +24,13 @@ const arrayTwo = [
 
 const compressedArray = [];
 
-const maxArray = arrayOne>=arrayTwo ? arrayOne : arrayTwo;
+const maxArray = arrayOne.length>=arrayTwo.length ? arrayOne : arrayTwo;
 
-const minArray = arrayOne<arrayTwo ? arrayOne : arrayTwo;
+const minArray = arrayOne.length<arrayTwo.length ? arrayOne : arrayTwo;
+
+while (minArray.length < maxArray.length){
+    minArray.push("");
+}
 
 for (i=0; i<maxArray.length; i++){
     compressedArray.push(maxArray[i] + minArray[i]);
