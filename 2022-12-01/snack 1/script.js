@@ -1,5 +1,14 @@
 const startingList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 const randomList =[];
+const removingList = startingList;
+
+console.log(removingList);
+
+while (removingList.length>10){
+    removingList.splice(Math.floor(Math.random()*removingList.length), 1);
+}
+
+console.log(removingList);
 
 
 while (randomList.length<10){
