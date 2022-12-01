@@ -2,8 +2,11 @@ const startingList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
 const randomList =[];
 
 function randomIndex(List){
-    List.splice(Math.floor(Math.random() * (List.length + 1)))
+    List.splice(Math.floor(Math.random() * (startingList.length + 1)),10);
+    return List;
 }
+
+console.log(randomIndex(startingList));
 
 for (let i=0; i<10; i++){
     
